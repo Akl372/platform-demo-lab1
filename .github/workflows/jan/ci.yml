@@ -2,23 +2,27 @@ name: CI
 
 on:
   push:
-    branches:
-      - main
-
+    branches: [ main ]
   pull_request:
-    branches:
-      - main
-  workflows_call:
+    branches: [ main ]
+  workflow_call:
+
 jobs:
-  platform_ci:
-    uses: GitFabien/platform-demo-lab1/.github/workflows/jan/ci.yml@main
   test:
     name: Tests
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout repository
         uses: actions/checkout@v6
-
+      
+      - name: Use Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      
+      - name: Install dependencies
+        run: npm install
+      
       - name: Run tests
-        run: make test
+        run: npm test
