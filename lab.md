@@ -12,11 +12,10 @@ Work as a team of 3–4. Improve the development workflow around this small Node
 ```
 4. Add a test for the feature.
 5. Add `.github/pull_request_template.md`. It must ask: What changed? Why? Testing? Risks? Checklist.
-6. Add `.github/CODEOWNERS`. For class, use `* @YOUR-GITHUB-USERNAME` or an instructor-provided team.
+6. Add `.github/CODEOWNERS`. For class, use `* @YOUR-GITHUB-USERNAME`.
 7. Open a PR against `main`.
 8. Configure `main`: require PR, require 1 approval, resolve conversations, block direct pushes/force pushes. Require CI status checks when CI is available.
 9. Have another teammate review, comment, approve, and merge.
-10. Discuss: what should the platform automate if this had to be repeated for 100 repositories?
 
 ## Definition of done
 - Feature + test
