@@ -5,14 +5,14 @@ Work as a team of 3–4. Improve the development workflow around this small Node
 
 ## Tasks
 1. Create/fork this repository as `platform-demo`.
-2. Create a branch named `feature/add-version-endpoint`.
-3. Add `GET /version`, returning:
+2. Add `.github/pull_request_template.md`. It must ask: What changed? Why? Testing? Risks? Checklist.
+3. Add `.github/CODEOWNERS`. For class, use `* @YOUR-GITHUB-USERNAME`.
+4. Create a branch named `feature/add-version-endpoint`.
+5. Add `GET /version`, returning:
 ```json
 {"service":"platform-demo","version":"1.0.0"}
 ```
-4. Add a test for the feature.
-5. Add `.github/pull_request_template.md`. It must ask: What changed? Why? Testing? Risks? Checklist.
-6. Add `.github/CODEOWNERS`. For class, use `* @YOUR-GITHUB-USERNAME`.
+6. Add a test for the feature.
 7. Open a PR against `main`.
 8. Configure `main`: require PR, require 1 approval, resolve conversations, block direct pushes/force pushes. Require CI status checks when CI is available.
 9. Have another teammate review, comment, approve, and merge.
